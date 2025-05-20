@@ -130,3 +130,102 @@ The person who achieves all these things is called as Data Analyst.
 Data Science (Modelling, Product building):
 
 Focus-1: Advanced statistical modelling (e.g., Machine Learning)
+
+-------------------------------------------------------------------------------------
+
+Numpy will make your code difficult to write and understand.
+Instead use Pandas and code. We must only know the basics of Numpy.
+
+# Pandas:
+Pandas: Library for Data Analysis
+Extremely powerful and flexible table (DataFrame) system built on top of NumPy
+Computationally very efficient
+Features
+Read/Write data – Many formats supported
+Indexing, Applying logic, Sub-setting, etc
+Handle missing data
+Adjust and restructure data
+
+# NumPy Compared to Pandas
+
+Numpy:
+Aim: Numerical computation using n-dimensional arrays
+Data types: Mainly Integer, Float
+Performance: Very fast
+Indexing: Integer-based (e.g. array [0,1]) 
+Built-in operations: Numerical and linear-algebra related
+Time-series data: No support
+
+Pandas:
+Aim: Data processing using series and dataframes
+Data types: Numeric, Text, Date
+Performance: Relative slower
+Indexing: Additionally also supports label-indexing (e.g. df[‘age’]
+Built-in operations: Data analysis tools such as merging, sorting, joining, handling missing data, etc
+Time-series data: Excellent support such as date-based indexing, shifting, resampling, etc
+
+# Pandas: Main Topics
+
+Series and DataFrames
+Conditional filtering and useful methods
+Missing data
+Grouping operations
+Combining dataframes
+Text methods and Time methods
+Inputs and Outputs
+
+# Series
+
+Series: A data structure that holds an array of information along with a named index
+The named index distinguishes it from a NumPy array
+
+NumPy array has numeric index
+
+Index	Data
+0	1776
+1	1867
+2	1821![image](https://github.com/user-attachments/assets/66499689-a2dc-4646-b66d-ff8c5731f1fe)
+Finding data using this index is not easy
+
+Pandas series has a labelled index
+Labelled Index	Data
+USA	1776
+Canada	1867
+England	1821![image](https://github.com/user-attachments/assets/6a4f62ff-bf9e-4bd5-b7b9-c998d682cf1f)
+Finding data using this index is very easy
+
+Note: Data is internally still numerically organized!
+Numeric Index	Labelled Index	Data
+0	USA	1776
+1	Canada	1867
+2	England	1821![image](https://github.com/user-attachments/assets/088670c0-59fb-4d0d-8e88-ac936f2d8c89)
+We can still use the numeric index, if we want
+
+# DataFrame
+
+DataFrame: Table of columns and rows that can be easily restructured/filtered
+Series
+Index	Year
+USA	1776
+Canada	1867
+England	1821![image](https://github.com/user-attachments/assets/8e197680-6285-4e28-a8fd-ec1e43244509)
+
+Multiple Series with the Same Index
+Index	Year
+USA	1776
+Canada	1867
+England	1821![image](https://github.com/user-attachments/assets/5f607abe-17d5-4f1d-8a83-9506bc3fe23d)
+Index	Pop
+USA	328
+Canada	38
+England	126![image](https://github.com/user-attachments/assets/16d52b28-1839-4e23-b699-63db39e0dc01)
+Index	GDP
+USA	20.5
+Canada	1.7
+England	3.9![image](https://github.com/user-attachments/assets/584cf1ab-c286-4649-9c26-eb793a700b05)
+Dataframe
+Index	Year	Pop	GDP
+USA	1776	328	20.5
+Canada	1867	38	1.7
+England	1821	126	3.9![image](https://github.com/user-attachments/assets/ac50d367-841d-41d2-a87b-0e65faa02f9f)
+So, Dataframe = Several series that share the same index, like a spreadsheet
