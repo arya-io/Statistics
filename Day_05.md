@@ -461,7 +461,330 @@ Probability estimation helps determine unknown probabilities based on observed d
 ## 🌍 **Real-World Applications:**  
 ✅ Stock market trends use **Normal Distribution** for price predictions.  
 ✅ **Binomial Distribution** helps e-commerce sites estimate **customer purchase probability**.  
-✅ **Poisson Distribution** is useful for **traffic modeling and call center management**.  
+✅ **Poisson Distribution** is useful for **traffic modeling and call center management**.
+
+---
+
+# 🎲 Uniform Distribution: Rolling a Die  
+
+A **Uniform Distribution** is when all possible outcomes have **equal probability**. Rolling a **fair six-sided die** is a perfect example!
+
+---
+
+
+## 📊 **Understanding Uniform Distribution:**  
+
+![image](https://github.com/user-attachments/assets/d1b6b2c0-87d1-414e-9738-eb121ad79cd9)
+
+- A standard die has **six faces** (1, 2, 3, 4, 5, and 6).  
+- Each face has an **equal chance** of appearing.  
+- The **probability of rolling any number** is:
+
+P(X) = 1/6 = 0.1667 approx.
+
+- Since all outcomes are equally likely, the sum of all probabilities must be **1**:
+
+P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1
+
+---
+
+## 📈 **Probability Mass Function (PMF) & Cumulative Distribution Function (CDF)**  
+
+Here is a visual representation of uniform distribution using **PMF** and **CDF**:
+
+### 🟦 **PMF (Probability Mass Function)**
+- This shows that **each die roll has the same probability (1/6)**.
+
+### 📈 **CDF (Cumulative Distribution Function)**
+- This accumulates probabilities as numbers increase, reaching **1** at roll **6**.
+
+---
+
+## 🔍 **Key Insights:**  
+✅ **Uniform distribution applies when all possible outcomes are equally probable.**  
+✅ **Rolling a fair die follows uniform distribution since every number has an equal chance of appearing.**  
+✅ **PMF and CDF help visualize probability behavior.**  
+
+---
+
+# 🎲 Binomial Distribution  
+
+The **Binomial Distribution** models **repeated Bernoulli trials**, where each trial has only **two possible outcomes**—success or failure. It’s widely used in probability and statistics, especially for **counting the number of successes** in a set of experiments. 🚀  
+
+---
+
+## 🔹 **Bernoulli Trial**  
+A **Bernoulli trial** is an experiment where the outcome is limited to **two choices**:  
+✅ **Success or Failure**  
+✅ **Yes or No**  
+✅ **Heads or Tails**  
+
+📌 **Examples:**  
+- Tossing a coin **once** → **Bernoulli Trial** (Outcomes: H or T)  
+- Checking if a person is **healthy or sick** → **Bernoulli Trial**  
+- Turning a switch **On or Off** → **Bernoulli Trial**  
+
+---
+
+## 🔢 **Binomial Distribution**  
+If a **Bernoulli trial** is **repeated multiple times**, it forms a **Binomial Distribution**.  
+
+📌 **Example:**  
+🎲 **Tossing a coin 10 times** → Binomial Distribution (Counting how many heads appear).  
+
+💡 **Key Insight:** The two outcomes **don’t always have equal probabilities**.  
+
+📌 **Example:**  
+- A **fruit basket** has **7 apples & 3 oranges**.  
+- Probability of picking an **apple (A)** → **P(A) = 7/10**  
+- Probability of picking an **orange (O)** → **P(O) = 3/10**  
+
+Even though there are only **two outcomes**, they don’t have equal probabilities.  
+
+---
+
+## 🏗 **Examples of Bernoulli Trials & Binomial Distributions**  
+
+### 1️⃣ **Tossing a Coin Once**  
+✅ **Uniform Probability:** P(H) = P(T) = **0.5**  
+✅ **Bernoulli Trial:** **Only two outcomes (H or T)**  
+✅ **Binomial Distribution:** ✅ (**Because it is a Bernoulli trial, done once**)  
+
+---
+
+### 2️⃣ **Throwing a Dice**  
+❌ **Not a Bernoulli Trial** → Because **six outcomes** exist (1, 2, 3, 4, 5, 6).  
+❌ **Not a Binomial Distribution** → Since it’s **not a Bernoulli trial**.  
+
+---
+
+### 3️⃣ **Drawing a Marble from a Jar**  
+- **Jar contains 5 red (R) & 3 blue (B) marbles**  
+- **Probability of Red:** **P(R) = 5/8**  
+- **Probability of Blue:** **P(B) = 3/8**  
+✅ **Bernoulli Trial:** Only two possible outcomes (R or B).  
+✅ **Binomial Distribution:** If multiple draws occur (tracking how often Red appears).  
+
+---
+
+## 🔍 **Comparing Uniform & Binomial Distributions:**  
+| Question | Answer |
+|----------|--------|
+| Is every **Uniform Distribution** also Binomial? | ❌ No |
+| Is every **Binomial Distribution** also Uniform? | ❌ No |
+| Can **Uniform Distribution** be Binomial? | ✅ Yes (if only two equal-probability outcomes exist) |
+| Can **Binomial Distribution** be Uniform? | ✅ Yes (if both outcomes have equal probability) |
+
+---
+
+## 🎯 **Key Takeaways:**  
+✅ **Bernoulli trials** involve **two possible outcomes** (success/failure).  
+✅ **Binomial distribution** tracks **multiple Bernoulli trials**.  
+✅ **Probability values don’t need to be equal** in binomial cases.  
+✅ **Uniform distributions assign equal probability** across all outcomes, but not all **Binomial distributions** are uniform.  
+
+---
+
+# 🎲 **Binomial Distribution - Key Characteristics**  
+
+The **Binomial Distribution** models **repeated independent trials** where each trial has **two possible outcomes**—success or failure. Let’s break it down! 🚀  
+
+---
+
+## 📌 **Characteristics of Binomial Distribution:**  
+1️⃣ **Fixed Number of Trials (n):**  
+   - The experiment is performed **n** times (e.g., flipping a coin **10 times**).  
+
+2️⃣ **Each Trial Has Two Outcomes:**  
+   - **Success (e.g., getting heads)** or **Failure (e.g., getting tails)**.  
+
+3️⃣ **Probability of Success (p) is Constant:**  
+   - The probability of **getting heads** remains **constant (p = 0.5)** across all trials.  
+
+4️⃣ **Trials are Independent:**  
+   - The outcome of one trial **does not affect** the outcome of another.  
+
+---
+
+## 🏗 **Example: Probability of Getting Exactly 7 Heads in 10 Flips**  
+
+The **Binomial Probability Formula** is:  
+
+![image](https://github.com/user-attachments/assets/78f613e7-548f-47d0-9117-4a32b3cd4d8e)
+
+Where:  
+- **n = 10** (total coin flips)  
+- **k = 7** (desired number of heads)  
+- **p = 0.5** (probability of heads)  
+- **q = 1 - p = 0.5** (probability of tails)  
+- Combination formula, calculated as:  
+
+![image](https://github.com/user-attachments/assets/a9a067e1-3851-413a-9f1a-56cf04b0e97b)
+
+Plugging in the values:
+
+![image](https://github.com/user-attachments/assets/2e8d9f65-3068-4bdc-8014-e8c5be08e302)
+
+✅ **Final Answer:**  
+The probability of **getting exactly 7 heads in 10 flips** is **≈ 11.7%**.
+
+---
+
+## 🎯 **Key Takeaways:**  
+✅ **Binomial distribution tracks the number of successes** in repeated trials.  
+✅ The formula accounts for **probability, total trials, and combinations**.  
+✅ It is widely used in **finance, genetics, and risk modeling**.  
+
+
+---
+
+# 🎲 Binomial Distribution Formula  
+
+The **Binomial Probability Formula** calculates the likelihood of a certain number of successes (**x**) in **n** independent trials, given the probability of success (**p**) in each trial.
+
+### 📌 **Formula:**  
+
+![image](https://github.com/user-attachments/assets/58bf1d67-1913-40c3-af66-d1274015e2cf)
+
+Where:
+- **n** = Total trials (number of students)  
+- **x** = Desired number of successes (students who like Python)  
+- **p** = Probability of success (a student liking Python)  
+- **(1 - p)** = Probability of failure (a student not liking Python)  
+- Combination formula for choosing **x** successes from **n** trials:
+
+![image](https://github.com/user-attachments/assets/d11e3188-6679-40b6-8b3e-c97c145dadd4)
+
+
+---
+
+### 🔢 **Solving the Given Problem:**  
+We need to find the probability that **3 out of 5 students** like Python when **66% of students generally like Python**.
+
+Given:
+- **n = 5**  
+- **x = 3**  
+- **p = 0.66**  
+- **q = 1 - p = 0.34**  
+
+### 🏗 **Step-by-Step Calculation:**  
+
+![image](https://github.com/user-attachments/assets/9d76bb9e-2940-439d-a7ed-a8d29358ca9e)
+
+✅ **Final Answer:**  
+The probability that **exactly 3 out of 5 students like Python** is **≈ 33.2%**.
+
+---
+
+## 🎯 **Key Takeaways:**  
+✅ The **binomial formula** helps calculate the probability of a fixed number of successes in repeated independent trials.  
+✅ The combination  accounts for different ways the successes can occur.  
+✅ This method applies to **education, genetics, business forecasting, and risk analysis**.  
+
+---
+
+# 🧮 Exercise: **Binomial Probability Calculation**  
+
+Let's calculate the probability that **2 out of 7 students** prefer online learning when, in general, **55% of students** prefer it.
+
+---
+
+## 📌 **Using the Binomial Probability Formula:**  
+
+![image](https://github.com/user-attachments/assets/299314e3-259f-4ab8-8b99-c3a64481e8e3)
+
+
+Where:
+- **n = 7** → Total students  
+- **k = 2** → Students preferring online learning  
+- **p = 0.55** → Probability of success (liking online learning)  
+- **(1 - p) = 0.45** → Probability of failure  
+
+### 🏗 **Step-by-Step Calculation:**  
+
+![image](https://github.com/user-attachments/assets/15c82a08-5539-4dc2-819f-8d798952f865)
+
+✅ **Final Answer:**  
+The probability that **exactly 2 out of 7 students prefer online learning** is **≈ 11.68%**.
+
+---
+
+## 💻 **Python Code Implementation**  
+
+```python
+from math import comb
+
+# Given data
+n = 7  # Total students
+k = 2  # Students preferring online learning
+p = 0.55  # Probability of success
+q = 1 - p  # Probability of failure
+
+# Binomial Probability Formula
+probability = comb(n, k) * (p ** k) * (q ** (n - k))
+
+print(f"The probability that exactly {k} out of {n} students prefer online learning is: {probability:.4f} or {probability*100:.2f}%")
+```
+
+---
+
+## 🎯 **Key Insights:**  
+✅ The **binomial formula** calculates probabilities for repeated independent trials.  
+✅ The **combination function** helps determine different ways the event can happen.  
+✅ This method is useful in **education, business analytics, and market research**.  
+
+---
+
+# 📊 Understanding PMF & CDF  
+
+Probability Mass Function (**PMF**) and Cumulative Distribution Function (**CDF**) help describe the behavior of a random variable. Let’s break them down with clear explanations and real-life examples! 🚀  
+
+---
+
+## 🔢 **Probability Mass Function (PMF)**  
+
+The **PMF** provides the probability of a discrete random variable **taking a specific value**. In simple terms, it tells us:  
+👉 "What is the probability of exactly **X** occurrences?"  
+
+📌 **Example: Tip Percentages in a Restaurant**  
+Suppose we define **success** as a tip **≥ 15%** of the total bill amount. The PMF calculates probabilities for different numbers of successful tips.  
+
+- **P(X = 0)** → Probability that **none** of the tips are at least 15%.  
+- **P(X = 1)** → Probability that **exactly one** tip is at least 15%.  
+- **P(X = 2)** → Probability that **exactly two** tips are at least 15%.  
+
+PMF deals with **individual probabilities** at **specific points**.
+
+---
+
+## 📈 **Cumulative Distribution Function (CDF)**  
+
+The **CDF** provides the probability that a random variable is **less than or equal to** a given value. Instead of looking at exact occurrences like PMF, CDF looks at cumulative probabilities.
+
+📌 **Example: Tip Percentages in a Restaurant**  
+Using the same dataset:  
+- **P(X ≤ 0)** → Probability that **none** of the tips are at least 15%.  
+- **P(X ≤ 1)** → Probability that **at most one** tip is at least 15%.  
+- **P(X ≤ 2)** → Probability that **at most two** tips are at least 15%.  
+
+CDF **adds up** probabilities as the number of successes increases.
+
+---
+
+## 🎯 **Key Differences:**  
+| Feature | PMF | CDF |
+|---------|----|----|
+| **Definition** | Probability of exact values | Probability up to a given value |
+| **Type** | Discrete points | Accumulated probabilities |
+| **Purpose** | Find chances of specific outcomes | Track overall probability growth |
+
+---
+
+## 🌍 **Why is this Important?**  
+PMF and CDF are widely used in **finance, machine learning, risk analysis, and business analytics** to evaluate probability distributions efficiently.
+
+---
+
 
 
 
