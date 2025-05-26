@@ -1531,3 +1531,11 @@ The defendant **is innocent**.
 
 * In many legal systems, **Type I Error** is considered more serious because *"It is better that ten guilty persons escape than that one innocent suffer."*
 now if you want me to simplify or add examples from other fields too!
+
+---
+
+Type 1 error:
+Rejecting a null hypothesis when we should not
+
+Type 2 error:
+Not rejecting null hypothesis when you should have
