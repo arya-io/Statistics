@@ -107,7 +107,9 @@ Left-tailed test: Tail (Rejection zone) is only on the right... Why?
     If test statistic (i.e., z-socre of our sample) <= 30, it means new battery technology is not showing effect, which matches with our null hypothesis, so do not reject H0.
     But if test statistic is significantly > 30, new technology is effective, so reject H0
     If test statistic is significantly > 30, its z-score must be positive ... why?
-    Z = x
+    Z = x(mean) - mu / s / square root of n... This would be positive if x(mean) > mu
+
+    So, reject H0, if test statistic > z-critical (at alpha)
 ---
 
 The possibility of a student getting placed before doing a C-DAC course is 40%.
@@ -133,15 +135,39 @@ Also identify where would be the rejection zones and alpha values.
 
 Two-Tailed and One-Tailed Tests: Impact on Alpha
 
+Two-tailed tests: Two rejection regions
+    alpha (Rejection Region) is split equally into lower tail and upper tail
+    So, if alpha = 0.05, we have alpha = 0.025 in the lower tail and alpha = 0.025 in the upper tail
+    So, split alpha into two
+One-tailed tests: Only one rejection region
+    alpha (Region region) is only in one tail (depending on whether we are using left-tailed test or right-tailed test)
+    So, if alpha = 0.05, we have entire alpha = 0.05 in only one of the tails
+    So, do not split alpha into two
+
+---
+
 Two-Tailed Tests: p-Value
 
-TO BE ADDED
+First calculate z-test statistic (could be positive or negative)
+Look up in the z-table to get area under the probability distribution to the left of the z-value.
+Example: z-test statistic = 1.23 in z-table, we get 0.8907
+But for positive z-score, we are interested in the area to the right of z-value, not to the area to the left
+To find area to the right, we calculate 1-0.8907 = 0.1903
+But because this is a two-tailed test, the rejection area is not only to the right, but also to the left
+So, we double 0.1093 = 2 * 0.1903 = 0.2186 = p-value
+Reject H0 if p_value <= alpha
 
 ---
 
 One-Tailed Tests (Left-Tailed): p-Value
 
-TO BE ADDED
+First calculate z-test statistic (would be negative for a left-tailed test and positive for a Right-Tailed test)
+Look up in the z-table to get area under the probability distribution to the left of the z-value.
+Example: z-test statistic = 1.46 in z-table, we get 0.9279
+But for positive z-score, we are interested in the area to the right of z-value, not to the area to the left
+To find area to the right, we calculate 1-0.9279 = 0.0721 = p-value
+No need to double, since the entire area of rejection is on the right
+Reject H0 if p_value <= alpha
 
 ---
 
@@ -433,4 +459,3 @@ Within-Groups Degrees of Freedom (df_within): Subtract df_between from df_total 
 We need to go to df_between column and df_within row, hence column 2 and row 12
 
 ---
-
